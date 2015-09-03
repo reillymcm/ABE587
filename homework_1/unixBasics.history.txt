@@ -1,0 +1,188 @@
+Last login: Wed Sep  2 09:05:07 on ttys000
+dhcp-10-132-148-110:~ moorelab$ ssh rmcmanus1@login.hpc.arizona.edu
+Password: 
+Duo two-factor login for rmcmanus1
+
+Enter a passcode or select one of the following options:
+
+ 1. Duo Push to XXX-XXX-7088
+ 2. Phone call to XXX-XXX-7088
+ 3. SMS passcodes to XXX-XXX-7088 (next code starts with: 1)
+
+Passcode or option (1-3): 1
+Success. Logging you in...
+Last login: Thu Aug 27 12:33:37 2015 from dhcp-10-132-136-58.uawifi.arizona.edu
+[rmcmanus1@service0 ~]$ pwd
+/home/u19/rmcmanus1
+[rmcmanus1@service0 ~]$ cd ..
+[rmcmanus1@service0 u19]$ ls -1 | wc -l
+51
+[rmcmanus1@service0 u19]$ ls
+alfowzan     eabowman     jgm2        mshe             seunghel      tnguyen1
+antonyp      eleisey      jhoskinson  nishanthprakash  shikharu      tommik
+asaduzzaman  erg1         jnovacek    nzeigler         shrivatsa     wangshumu
+austinpaine  faithv       kling       pedromarquez     songcuih      wenchen
+bmlau        harigaya     law         rfitak           stepans       xiulihao
+bojan        hfrisk       libserbi    rmcmanus1        szhang1       yuetongl
+connally     jacobmmarx   lnz         rotondof         taharkerkeni
+dingzou      janez        mcmahonm    rpalit           thealsir
+dvig         jasonikpatt  meg2        rufus            tianye
+[rmcmanus1@service0 u19]$ ls | wc -l
+51
+[rmcmanus1@service0 u19]$ ls -a
+.            dingzou     janez        mcmahonm         rpalit        thealsir
+..           dvig        jasonikpatt  meg2             rufus         tianye
+alfowzan     eabowman    jgm2         mshe             seunghel      tnguyen1
+antonyp      eleisey     jhoskinson   nishanthprakash  shikharu      tommik
+asaduzzaman  erg1        jnovacek     nzeigler         shrivatsa     wangshumu
+austinpaine  faithv      kling        pedromarquez     songcuih      wenchen
+bmlau        harigaya    law          rfitak           stepans       xiulihao
+bojan        hfrisk      libserbi     rmcmanus1        szhang1       yuetongl
+connally     jacobmmarx  lnz          rotondof         taharkerkeni
+[rmcmanus1@service0 u19]$ echo 
+
+[rmcmanus1@service0 u19]$ echo * | wc
+      1      51     427
+[rmcmanus1@service0 u19]$ ftp ftp.imicrobe.us
+Connected to ftp.imicrobe.us (128.196.131.100).
+220 Welcome to the imicrobe.us repository
+Name (ftp.imicrobe.us:rmcmanus1): anonymous
+331 Please specify the password.
+Password:
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> cd tmp
+250 Directory successfully changed.
+ftp> get mouse.fa
+local: mouse.fa remote: mouse.fa
+local: mouse.fa: Permission denied
+ftp> get cuffdiff.txt
+local: cuffdiff.txt remote: cuffdiff.txt
+local: cuffdiff.txt: Permission denied
+ftp> quit
+221 Goodbye.
+[rmcmanus1@service0 u19]$ ls
+alfowzan     eabowman     jgm2        mshe             seunghel      tnguyen1
+antonyp      eleisey      jhoskinson  nishanthprakash  shikharu      tommik
+asaduzzaman  erg1         jnovacek    nzeigler         shrivatsa     wangshumu
+austinpaine  faithv       kling       pedromarquez     songcuih      wenchen
+bmlau        harigaya     law         rfitak           stepans       xiulihao
+bojan        hfrisk       libserbi    rmcmanus1        szhang1       yuetongl
+connally     jacobmmarx   lnz         rotondof         taharkerkeni
+dingzou      janez        mcmahonm    rpalit           thealsir
+dvig         jasonikpatt  meg2        rufus            tianye
+[rmcmanus1@service0 u19]$ cd ..
+[rmcmanus1@service0 home]$ ls
+flexlm    pbsworks  u10  u13  u16  u19  u21  u24  u27  u3   u32  u6  u9
+fmckenna  t         u11  u14  u17  u2   u22  u25  u28  u30  u4   u7
+pbsadmin  u1        u12  u15  u18  u20  u23  u26  u29  u31  u5   u8
+[rmcmanus1@service0 home]$ cd ..
+[rmcmanus1@service0 /]$ ls
+bin     etc      home        misc      proc     scratch   uaopt
+bio5    genome   lib         mnt       root     selinux   unsupported
+boot    gpfs     lib64       net       rsgrps   srv       usr
+cfd     groups1  logs        opt       rsgrps1  sys       var
+cgroup  gsfs1    lost+found  pbs       rsgrps2  tftpboot  xdisk
+dev     gsfs2    media       pbsworks  sbin     tmp
+[rmcmanus1@service0 /]$ pwd
+/
+[rmcmanus1@service0 /]$ cd -
+/home
+[rmcmanus1@service0 home]$ ls
+flexlm    pbsworks  u10  u13  u16  u19  u21  u24  u27  u3   u32  u6  u9
+fmckenna  t         u11  u14  u17  u2   u22  u25  u28  u30  u4   u7
+pbsadmin  u1        u12  u15  u18  u20  u23  u26  u29  u31  u5   u8
+[rmcmanus1@service0 home]$ cd u19
+[rmcmanus1@service0 u19]$ ls
+alfowzan     eabowman     jgm2        mshe             seunghel      tnguyen1
+antonyp      eleisey      jhoskinson  nishanthprakash  shikharu      tommik
+asaduzzaman  erg1         jnovacek    nzeigler         shrivatsa     wangshumu
+austinpaine  faithv       kling       pedromarquez     songcuih      wenchen
+bmlau        harigaya     law         rfitak           stepans       xiulihao
+bojan        hfrisk       libserbi    rmcmanus1        szhang1       yuetongl
+connally     jacobmmarx   lnz         rotondof         taharkerkeni
+dingzou      janez        mcmahonm    rpalit           thealsir
+dvig         jasonikpatt  meg2        rufus            tianye
+[rmcmanus1@service0 u19]$ cd rmcmanus1
+[rmcmanus1@service0 ~]$ ls
+[rmcmanus1@service0 ~]$ mkdir abe487
+[rmcmanus1@service0 ~]$ ls
+abe487
+[rmcmanus1@service0 ~]$ Write failed: Broken pipe
+dhcp-10-132-148-110:~ moorelab$ 
+dhcp-10-132-148-110:~ moorelab$ cp ~/Desktop/sequence.fa ~/abe487
+dhcp-10-132-148-110:~ moorelab$ ls
+Applications				Movies
+CLC_Data				Music
+CLCdatabases				Pictures
+Desktop					Public
+Documents				Sites
+Downloads				abe487
+Geneious 8.1 Data			b2gFiles
+Genomics				b2gWorkspace
+Lab					blast-2.2.22
+Library					derby.log
+Mesquite_Folder				gspread
+Mesquite_Support_Files			outputs1
+Moore Faculty Seed_3_2_2015.docx	qiime_tutorial
+dhcp-10-132-148-110:~ moorelab$ cd -
+-bash: cd: OLDPWD not set
+dhcp-10-132-148-110:~ moorelab$ cp ./Desktop/sequence.fa ./abe487/
+dhcp-10-132-148-110:~ moorelab$ cd abe487
+dhcp-10-132-148-110:abe487 moorelab$ ls
+ABE587		README.md	homework_1	sequence.fa
+dhcp-10-132-148-110:abe487 moorelab$ rm -r ABE587
+override r--r--r--  moorelab/staff for ABE587/.git/objects/pack/pack-a479b2d2fe9d9dee251dc1207a183d98d5c6e4da.idx? 
+override r--r--r--  moorelab/staff for ABE587/.git/objects/pack/pack-a479b2d2fe9d9dee251dc1207a183d98d5c6e4da.pack? 
+rm: ABE587/.git/objects/pack: Directory not empty
+rm: ABE587/.git/objects: Directory not empty
+rm: ABE587/.git: Directory not empty
+rm: ABE587: Directory not empty
+dhcp-10-132-148-110:abe487 moorelab$ ls ABE587
+dhcp-10-132-148-110:abe487 moorelab$ cd ABE587
+dhcp-10-132-148-110:ABE587 moorelab$ ls
+dhcp-10-132-148-110:ABE587 moorelab$ cd ..
+dhcp-10-132-148-110:abe487 moorelab$ wc -l sequence.fa
+   59876 sequence.fa
+dhcp-10-132-148-110:abe487 moorelab$ wc -m sequence.fa
+ 3652439 sequence.fa
+dhcp-10-132-148-110:abe487 moorelab$ head sequence.fa
+>Chromosome dna:chromosome chromosome:GCA_000093085.1:Chromosome:1:3592487:1
+ATTATATGAATTCCTAAGTCTCTTGTCAATACCATAATGAAATTTCCTCTTGATCCCCGT
+TTTTCTTTTCGTAATAACAGCCGGACAGAAGTGTCATTTATCCGTCCTTCACTCCAGATC
+CTCATCGATCTGACCTCTTATACATGAGTTTTTCCACTGCCTCAAAATCGCCTGTGCATC
+TCACTGTGGATGGATTATTGCCTTCATTGTCAATTACCCACAAGACTGATCACAGCTTAT
+GCACAAGATCATGTGCTGTGGACAACTTTTGACCACAATGGGTTGAATTATGTGGATAAC
+TCGCCCAAAACGTTGTCTTACACCGGTTTTTCTGATATTATTATGTTGTTTTTTCCCTGC
+AAACAACTGTGGTACAATAAATCTATCCACAGCTGTTGATAATTTTGTGGATAGATTTCC
+ACAGCTTCTGTGTACGTTTATCCACAGGAATGTGCGAAATGGGGATGTTTCATCTCTCTT
+CATCATGAGATACATACGTCAATTTGTGGGGATATTTTTTATGCGTTTCTATGCAAGTGA
+dhcp-10-132-148-110:abe487 moorelab$ tail sequence.fa
+ACAAACTGACGATTCGCCACCGATTTGCCATGTTTAAATACCGTCTGAAAATCCTCATTC
+TTTCGTAGACGATGTTCCTTTTTCATAACCGTTATTGCACCTCATCCAGGACTGGCCGAG
+CAGTTACGTGCGACGCAGTCAGTATTCAGTATAAAGAATCCAAAGGCATTCGCCAAGTGG
+AATCCGGATTGTTCACAAAAAAGAAAACCAGATCGAAACCATTCACTCGCTGATGAGGAA
+TGATATTGATCTGGTTTCTGACGACTGCTTATTTCGCGAGCACATGCTTTCCTGTAAAAA
+ACAGAAAGGCTCGCTGAATGAGCGGCCCGTTTTACGCAGAAAGTACCTTTCTTCCTTTAC
+GGCGACGACTGGCGAGAACGCGACGGCCATTGCTCGTTGACATACGCTGACGGAAACCGT
+GTACTTTTTTACGCTTACGGTTGTTTGGATTGAATGTTGGTTTGCCCATGTATTACACCT
+CCTGATTCCGGGTTTATGAATGGATTATTCATGCGGTACTTGTGATTGTTTACCTGTCTG
+ATTATCGATCGGTCCAAATGGTAAAGTCAATACAGACATCCTTGTAA
+dhcp-10-132-148-110:abe487 moorelab$ grep -c "^>" sequence.fa
+1
+dhcp-10-132-148-110:abe487 moorelab$ grep ">" sequence.fa | wc -l
+       1
+dhcp-10-132-148-110:abe487 moorelab$ mv sequence.fa bacillus.fa
+dhcp-10-132-148-110:abe487 moorelab$ ls
+ABE587		README.md	bacillus.fa	homework_1
+dhcp-10-132-148-110:abe487 moorelab$ mkdir fasta
+dhcp-10-132-148-110:abe487 moorelab$ ls
+ABE587		README.md	bacillus.fa	fasta		homework_1
+dhcp-10-132-148-110:abe487 moorelab$ cp bacillus.fa /fasta
+cp: /fasta: Permission denied
+dhcp-10-132-148-110:abe487 moorelab$ cp bacillus.fa fasta
+dhcp-10-132-148-110:abe487 moorelab$ ls fasta/
+bacillus.fa
+dhcp-10-132-148-110:abe487 moorelab$ rm bacillus.fa
+dhcp-10-132-148-110:abe487 moorelab$ 
