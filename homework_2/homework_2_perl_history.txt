@@ -1,0 +1,98 @@
+Last login: Sun Sep  6 19:34:10 on ttys001
+moores-air:~ moorelab$ cp ./Desktop/hello.pl ./abe487/homework_2/ | cp ./Desktop/name.pl ./abe487/homework_2/ | cp ./Desktop/tab_newline.pl ./abe487/homework_2/| cp ./Desktop/doublequotes.pl ./abe487/homework_2/ | cp ./Desktop/singlequotes.pl ./abe487/homework_2/ | cp ./Desktop/doublevariable.pl ./abe487/homework_2/ | cp ./Desktop/singlevariable.pl ./abe487/homework_2/ | cp ./Desktop/mathsingle.pl ./abe487/homework_2/ | cp ./Desktop/mathdouble.pl ./abe487/homework_2/ | cp ./Desktop/5.pl ./abe487/homework_2/ | cp ./Desktop/quotedifference.pl ./abe487/homework_2/ 
+moores-air:~ moorelab$ cd abe487/
+moores-air:abe487 moorelab$ ls
+abe487		homework_1	homework_2
+moores-air:abe487 moorelab$ ls ./homework_
+ls: ./homework_: No such file or directory
+moores-air:abe487 moorelab$ ./homework_2
+-bash: ./homework_2: is a directory
+moores-air:abe487 moorelab$ ls ./homework_2
+5.pl			mathdouble.pl		singlequotes.pl
+doublequotes.pl		mathsingle.pl		singlevariable.pl
+doublevariable.pl	name.pl			tab_newline.pl
+hello.pl		quotedifference.pl
+moores-air:abe487 moorelab$ perl hello.pl
+Can't open perl script "hello.pl": No such file or directory
+moores-air:abe487 moorelab$ cd homework_2
+moores-air:homework_2 moorelab$ perl hello.pl 
+Hello Tucson
+Hello World.
+moores-air:homework_2 moorelab$ perl name.pl 
+Hello Eggplant
+moores-air:homework_2 moorelab$ perl tab_newline.pl 
+potato pea	mushroom zucchini
+apple berry melon
+carrot leek	kale chard spinach
+banana banana.
+moores-air:homework_2 moorelab$ perl doublequotes.pl 
+there was a farmer
+had a dog
+and bingo was his name-o
+B I N G O	B I N G O
+and Bingo was his name-o
+moores-air:homework_2 moorelab$ perl singlequotes.pl 
+there was a farmer\nhad a dog\nand bingo was his name-o\nB I N G O\tB I N G O\nand Bingo was his name-o\nmoores-air:homework_2 moorelab$ perl doublevariable.pl 
+there was a farmer
+had a dog
+and BINGO was his name-o
+BINGO	BINGO
+and BINGO was his name-o
+moores-air:homework_2 moorelab$ perl singlevariable.pl 
+there was a farmer\nhad a dog\nand $name was his name-o\n$name\t$name\nand $name was his name-o\nmoores-air:homework_2 moorelab$ perl mathsingle.pl 
+there was a farmer\nhad  dogs\nand $name was their name-o\n$name\t$name\nand $name was their name-o\nmoores-air:homework_2 moorelab$ cd -
+/Users/moorelab/abe487
+moores-air:abe487 moorelab$ cd 
+moores-air:~ moorelab$ cp ./Desktop/mathsingle.pl ./abe487/homework_2
+moores-air:~ moorelab$ cd abe487/
+moores-air:abe487 moorelab$ cd homework_2
+moores-air:homework_2 moorelab$ ls
+5.pl			mathdouble.pl		singlequotes.pl
+doublequotes.pl		mathsingle.pl		singlevariable.pl
+doublevariable.pl	name.pl			tab_newline.pl
+hello.pl		quotedifference.pl
+moores-air:homework_2 moorelab$ perl mathsingle.pl 
+there was a farmer\nhad $sum dogs\nand $name was their name-o\n$name\t$name\nand $name was their name-o\nmoores-air:homework_2 moorelab$ perl mathdouble.pl 
+2 + 3
+moores-air:homework_2 moorelab$ perl 5.pl 
+total	5moores-air:homework_2 moorelab$ 
+moores-air:homework_2 moorelab$ perl quotedifference.pl 
+syntax error at quotedifference.pl line 10, near "print"
+Execution of quotedifference.pl aborted due to compilation errors.
+moores-air:homework_2 moorelab$ cd
+moores-air:~ moorelab$ cp ./Desktop/quotedifference.pl ./abe487/homework_2
+moores-air:~ moorelab$ cd ../..homework_2
+-bash: cd: ../..homework_2: No such file or directory
+moores-air:~ moorelab$ cd .. /..homework_2
+moores-air:Users moorelab$ ls
+Shared		fmpmoorelab	moorelab
+moores-air:Users moorelab$ cd moorelab
+moores-air:~ moorelab$ cd abe487/
+moores-air:abe487 moorelab$ cd homework_2
+moores-air:homework_2 moorelab$ perl quotedifference.pl 
+syntax error at quotedifference.pl line 10, near "print"
+Execution of quotedifference.pl aborted due to compilation errors.
+moores-air:homework_2 moorelab$ ls
+5.pl			mathdouble.pl		singlequotes.pl
+doublequotes.pl		mathsingle.pl		singlevariable.pl
+doublevariable.pl	name.pl			tab_newline.pl
+hello.pl		quotedifference.pl
+moores-air:homework_2 moorelab$ rm quotedifference.pl 
+moores-air:homework_2 moorelab$ cd
+moores-air:~ moorelab$ cp ./Desktop/quotedifference.pl ./abe487/homework_2/
+moores-air:~ moorelab$ cd abe487/
+moores-air:abe487 moorelab$ cd homework_2
+moores-air:homework_2 moorelab$ perl quotedifference.pl 
+syntax error at quotedifference.pl line 10, near "print"
+Execution of quotedifference.pl aborted due to compilation errors.
+moores-air:homework_2 moorelab$ rm quotedifference.pl 
+moores-air:homework_2 moorelab$ cd
+moores-air:~ moorelab$ cp ./Desktop/quotedifference.pl ./abe487/homework_2/
+moores-air:~ moorelab$ cd ./abe487/homework_2/
+moores-air:homework_2 moorelab$ perl quotedifference.pl 
+single quoted strings are taken as is
+and do not interpolate variables	you see exactly what you typed as it is
+double quoted strings do interpolate variables
+the variables are inserted into the string
+moores-air:homework_2 moorelab$ git add .
+moores-air:homework_2 moorelab$ 
