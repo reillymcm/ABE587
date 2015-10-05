@@ -1,2 +1,0 @@
-Q1: Don't open STDOUT/STDERR.  Just print to those and let the user redirect.
-Half point off.

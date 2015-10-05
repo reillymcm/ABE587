@@ -32,3 +32,8 @@ if (defined $x && defined $y) {
     }
 }
 
+__END__
+
+Don't open STDOUT/STDERR.  Just print to those and let the user redirect.
+
+One point off.
