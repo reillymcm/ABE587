@@ -5,8 +5,8 @@ use warnings;
 use autodie;
 
 
-if(not @ARGV){
-  print "provide a list of numbers \n";
+if(!@ARGV){
+  die "provide a list of numbers \n";
 }
 
 
@@ -21,11 +21,10 @@ for (my $i=0; $i<scalar @ARGV ; $i++){
 	}	
 }
 
-print "sum evens =", $even_sum, "\n" ;
+print "sum evens = ", $even_sum, "\n" ;
 
-print "sum odds =", $odd_sum, "\n";
+print "sum odds = ", $odd_sum, "\n";
 
+__END__
 
-
-
-
+"not" is not a Perl keyword.  Use "!" or "unless"
