@@ -11,7 +11,7 @@ while (<>) {
     chomp;
 
     if (/^>/) {
-        $seq_key = substr $_, 1 ;
+        $seq_key = substr $_, 1;
     }
     else {
         $sequences{$seq_key} = $_;
@@ -24,3 +24,4 @@ foreach my $key (
     my $len = length ($sequences{$key});
     print "$key:$len\n";
 }
+
