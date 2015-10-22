@@ -13,7 +13,6 @@ while (my $line = <DATA>) {
 }
 
 __DATA__
-
 Nobody by Shel Silverstein
 Nobody loves me,
 Nobody cares,

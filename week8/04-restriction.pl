@@ -3,11 +3,11 @@
 use strict;
 use warnings;
 use autodie;
+use feature 'say';
 
 # R^AATTY..... R = A or G..... Y = C or T....
 
-my $input = shift or die "Please provide a sequence or file. \n" ;
-
+my $input = shift or die "Please provide a sequence or file.\n" ;
 
 foreach ($input) {
     open my $fh, '<', $input;
@@ -15,4 +15,4 @@ foreach ($input) {
 }
 
 $input =~ s/([AG])(AATT[CT])/$1^$2/g;
-print $input; #modified input
+say $input; #modified input
