@@ -5,22 +5,34 @@ use warnings;
 use autodie;
 
 
-my (%sequences, $seq_key);
+my $file1 = shift || 'Perl_V.genesAndSeq.txt';
+open my $f1, '<', $file1;
 
-while (<>) {
-    chomp;
+my %seqs;
+my $id; 
+my $dna;
 
-    if (/^>/) {
-        $seq_key = substr $_, 1 ;
-    }
-    else {
-        $sequences{$seq_key} = $_;
-    }
-}
-
-foreach my $key (
-    sort {length $sequences{$a} <=> length $sequences{$b} } keys %sequences)
+while (my $line = <$f1>)
 {
-    my $len = length ($sequences{$key});
-    print "$key:$len\n";
+    chomp $line;
+
+    if ($line =~ / ^ > (.+) /x)
+    {
+        $seqs{$id} = $dna if defined $id;
+        $id        = $1;
+        $dna       = '';
+    }
+    else
+    {
+        $dna      .= $line;
+    }
 }
+
+$seqs{$id} = $dna if defined $id;
+
+for my $key (sort { length $seqs{$a} <=> length $seqs{$b} } keys %seqs){
+    printf "%s:%d\n", $key, length $seqs{$key};
+}
+
+
+
