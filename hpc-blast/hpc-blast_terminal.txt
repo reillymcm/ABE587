@@ -1,0 +1,172 @@
+Last login: Tue Nov 17 11:54:47 on ttys001
+dhcp-10-132-191-33:~ moorelab$ ssh hpc
+Last login: Tue Nov 17 11:17:09 2015 from dhcp-10-132-191-33.uawifi.arizona.edu
+[rmcmanus1@service1 ~]$ cd hpc-blast/
+[rmcmanus1@service1 hpc-blast]$ ls
+blastdb            blast-results  data     std-err
+blast-pipeline.sh  config.sh      scripts  std-out
+[rmcmanus1@service1 hpc-blast]$ cd std-err/
+[rmcmanus1@service1 std-err]$ ls
+473801[1].service0.ER  473803[3].service0.ER  473806[2].service0.ER
+473801[2].service0.ER  473803[4].service0.ER  473806[3].service0.ER
+473801[3].service0.ER  473803[5].service0.ER  473806[4].service0.ER
+473801[4].service0.ER  473804[1].service0.ER  473806[5].service0.ER
+473801[5].service0.ER  473804[2].service0.ER  473806[6].service0.ER
+473801[6].service0.ER  473804[3].service0.ER  473806[7].service0.ER
+473801[7].service0.ER  473804[4].service0.ER  473807[1].service0.ER
+473802[1].service0.ER  473804[5].service0.ER  473807[2].service0.ER
+473802[2].service0.ER  473805[1].service0.ER  473807[3].service0.ER
+473802[3].service0.ER  473805[2].service0.ER  473807[4].service0.ER
+473802[4].service0.ER  473805[3].service0.ER  473807[5].service0.ER
+473802[5].service0.ER  473805[4].service0.ER  473808[1].service0.ER
+473802[6].service0.ER  473805[5].service0.ER  473808[2].service0.ER
+473802[7].service0.ER  473805[6].service0.ER  473808[3].service0.ER
+473803[1].service0.ER  473805[7].service0.ER  473808[4].service0.ER
+473803[2].service0.ER  473806[1].service0.ER  473808[5].service0.ER
+[rmcmanus1@service1 std-err]$ cd ..
+[rmcmanus1@service1 hpc-blast]$ cd std-out/
+[rmcmanus1@service1 std-out]$ ls
+473801[1].service0.OU  473803[3].service0.OU  473806[2].service0.OU
+473801[2].service0.OU  473803[4].service0.OU  473806[3].service0.OU
+473801[3].service0.OU  473803[5].service0.OU  473806[4].service0.OU
+473801[4].service0.OU  473804[1].service0.OU  473806[5].service0.OU
+473801[5].service0.OU  473804[2].service0.OU  473806[6].service0.OU
+473801[6].service0.OU  473804[3].service0.OU  473806[7].service0.OU
+473801[7].service0.OU  473804[4].service0.OU  473807[1].service0.OU
+473802[1].service0.OU  473804[5].service0.OU  473807[2].service0.OU
+473802[2].service0.OU  473805[1].service0.OU  473807[3].service0.OU
+473802[3].service0.OU  473805[2].service0.OU  473807[4].service0.OU
+473802[4].service0.OU  473805[3].service0.OU  473807[5].service0.OU
+473802[5].service0.OU  473805[4].service0.OU  473808[1].service0.OU
+473802[6].service0.OU  473805[5].service0.OU  473808[2].service0.OU
+473802[7].service0.OU  473805[6].service0.OU  473808[3].service0.OU
+473803[1].service0.OU  473805[7].service0.OU  473808[4].service0.OU
+473803[2].service0.OU  473806[1].service0.OU  473808[5].service0.OU
+[rmcmanus1@service1 std-out]$ ls  -l
+total 192
+-rw------- 1 rmcmanus1 wmoore  0 Nov 16 18:35 473801[1].service0.OU
+-rw------- 1 rmcmanus1 wmoore  0 Nov 16 18:35 473801[2].service0.OU
+-rw------- 1 rmcmanus1 wmoore  0 Nov 16 18:35 473801[3].service0.OU
+-rw------- 1 rmcmanus1 wmoore  0 Nov 16 18:35 473801[4].service0.OU
+-rw------- 1 rmcmanus1 wmoore  0 Nov 16 18:35 473801[5].service0.OU
+-rw------- 1 rmcmanus1 wmoore  0 Nov 16 18:35 473801[6].service0.OU
+-rw------- 1 rmcmanus1 wmoore  0 Nov 16 18:35 473801[7].service0.OU
+-rw------- 1 rmcmanus1 wmoore 38 Nov 16 20:25 473802[1].service0.OU
+-rw------- 1 rmcmanus1 wmoore 38 Nov 16 20:25 473802[2].service0.OU
+-rw------- 1 rmcmanus1 wmoore 38 Nov 16 20:25 473802[3].service0.OU
+-rw------- 1 rmcmanus1 wmoore 38 Nov 16 20:25 473802[4].service0.OU
+-rw------- 1 rmcmanus1 wmoore 38 Nov 16 20:25 473802[5].service0.OU
+-rw------- 1 rmcmanus1 wmoore 38 Nov 16 20:25 473802[6].service0.OU
+-rw------- 1 rmcmanus1 wmoore 38 Nov 16 20:25 473802[7].service0.OU
+-rw------- 1 rmcmanus1 wmoore  0 Nov 16 18:35 473803[1].service0.OU
+-rw------- 1 rmcmanus1 wmoore  0 Nov 16 18:35 473803[2].service0.OU
+-rw------- 1 rmcmanus1 wmoore  0 Nov 16 18:35 473803[3].service0.OU
+-rw------- 1 rmcmanus1 wmoore  0 Nov 16 18:35 473803[4].service0.OU
+-rw------- 1 rmcmanus1 wmoore  0 Nov 16 14:13 473803[5].service0.OU
+-rw------- 1 rmcmanus1 wmoore 40 Nov 16 20:22 473804[1].service0.OU
+-rw------- 1 rmcmanus1 wmoore 40 Nov 16 20:22 473804[2].service0.OU
+-rw------- 1 rmcmanus1 wmoore 40 Nov 16 20:22 473804[3].service0.OU
+-rw------- 1 rmcmanus1 wmoore 40 Nov 16 20:22 473804[4].service0.OU
+-rw------- 1 rmcmanus1 wmoore 40 Nov 16 20:22 473804[5].service0.OU
+-rw------- 1 rmcmanus1 wmoore  0 Nov 16 14:15 473805[1].service0.OU
+-rw------- 1 rmcmanus1 wmoore  0 Nov 16 14:15 473805[2].service0.OU
+-rw------- 1 rmcmanus1 wmoore  0 Nov 16 18:35 473805[3].service0.OU
+-rw------- 1 rmcmanus1 wmoore  0 Nov 16 18:35 473805[4].service0.OU
+-rw------- 1 rmcmanus1 wmoore  0 Nov 16 18:35 473805[5].service0.OU
+-rw------- 1 rmcmanus1 wmoore  0 Nov 16 18:35 473805[6].service0.OU
+-rw------- 1 rmcmanus1 wmoore  0 Nov 16 18:35 473805[7].service0.OU
+-rw------- 1 rmcmanus1 wmoore 38 Nov 16 20:24 473806[1].service0.OU
+-rw------- 1 rmcmanus1 wmoore 38 Nov 16 20:26 473806[2].service0.OU
+-rw------- 1 rmcmanus1 wmoore 38 Nov 16 20:26 473806[3].service0.OU
+-rw------- 1 rmcmanus1 wmoore 38 Nov 16 20:26 473806[4].service0.OU
+-rw------- 1 rmcmanus1 wmoore 38 Nov 16 20:26 473806[5].service0.OU
+-rw------- 1 rmcmanus1 wmoore 38 Nov 16 20:26 473806[6].service0.OU
+-rw------- 1 rmcmanus1 wmoore 38 Nov 16 20:26 473806[7].service0.OU
+-rw------- 1 rmcmanus1 wmoore  0 Nov 16 18:35 473807[1].service0.OU
+-rw------- 1 rmcmanus1 wmoore  0 Nov 16 18:35 473807[2].service0.OU
+-rw------- 1 rmcmanus1 wmoore  0 Nov 16 18:35 473807[3].service0.OU
+-rw------- 1 rmcmanus1 wmoore  0 Nov 16 18:35 473807[4].service0.OU
+-rw------- 1 rmcmanus1 wmoore  0 Nov 16 14:16 473807[5].service0.OU
+-rw------- 1 rmcmanus1 wmoore 40 Nov 16 20:22 473808[1].service0.OU
+-rw------- 1 rmcmanus1 wmoore 40 Nov 16 20:22 473808[2].service0.OU
+-rw------- 1 rmcmanus1 wmoore 40 Nov 16 20:22 473808[3].service0.OU
+-rw------- 1 rmcmanus1 wmoore 40 Nov 16 20:22 473808[4].service0.OU
+-rw------- 1 rmcmanus1 wmoore 40 Nov 16 20:22 473808[5].service0.OU
+[rmcmanus1@service1 std-out]$ cd ..
+[rmcmanus1@service1 hpc-blast]$ cd std-err/
+[rmcmanus1@service1 std-err]$ ls -l
+total 192
+-rw------- 1 rmcmanus1 wmoore   0 Nov 16 18:35 473801[1].service0.ER
+-rw------- 1 rmcmanus1 wmoore   0 Nov 16 18:35 473801[2].service0.ER
+-rw------- 1 rmcmanus1 wmoore   0 Nov 16 18:35 473801[3].service0.ER
+-rw------- 1 rmcmanus1 wmoore   0 Nov 16 18:35 473801[4].service0.ER
+-rw------- 1 rmcmanus1 wmoore   0 Nov 16 18:35 473801[5].service0.ER
+-rw------- 1 rmcmanus1 wmoore   0 Nov 16 18:35 473801[6].service0.ER
+-rw------- 1 rmcmanus1 wmoore   0 Nov 16 18:35 473801[7].service0.ER
+-rw------- 1 rmcmanus1 wmoore 122 Nov 16 20:25 473802[1].service0.ER
+-rw------- 1 rmcmanus1 wmoore 122 Nov 16 20:25 473802[2].service0.ER
+-rw------- 1 rmcmanus1 wmoore 122 Nov 16 20:25 473802[3].service0.ER
+-rw------- 1 rmcmanus1 wmoore 122 Nov 16 20:25 473802[4].service0.ER
+-rw------- 1 rmcmanus1 wmoore 122 Nov 16 20:25 473802[5].service0.ER
+-rw------- 1 rmcmanus1 wmoore 122 Nov 16 20:25 473802[6].service0.ER
+-rw------- 1 rmcmanus1 wmoore 122 Nov 16 20:25 473802[7].service0.ER
+-rw------- 1 rmcmanus1 wmoore   0 Nov 16 18:35 473803[1].service0.ER
+-rw------- 1 rmcmanus1 wmoore   0 Nov 16 18:35 473803[2].service0.ER
+-rw------- 1 rmcmanus1 wmoore   0 Nov 16 18:35 473803[3].service0.ER
+-rw------- 1 rmcmanus1 wmoore   0 Nov 16 18:35 473803[4].service0.ER
+-rw------- 1 rmcmanus1 wmoore   0 Nov 16 14:13 473803[5].service0.ER
+-rw------- 1 rmcmanus1 wmoore 122 Nov 16 20:22 473804[1].service0.ER
+-rw------- 1 rmcmanus1 wmoore 122 Nov 16 20:22 473804[2].service0.ER
+-rw------- 1 rmcmanus1 wmoore 122 Nov 16 20:22 473804[3].service0.ER
+-rw------- 1 rmcmanus1 wmoore 122 Nov 16 20:22 473804[4].service0.ER
+-rw------- 1 rmcmanus1 wmoore 122 Nov 16 20:22 473804[5].service0.ER
+-rw------- 1 rmcmanus1 wmoore   0 Nov 16 14:15 473805[1].service0.ER
+-rw------- 1 rmcmanus1 wmoore   0 Nov 16 14:15 473805[2].service0.ER
+-rw------- 1 rmcmanus1 wmoore   0 Nov 16 18:35 473805[3].service0.ER
+-rw------- 1 rmcmanus1 wmoore   0 Nov 16 18:35 473805[4].service0.ER
+-rw------- 1 rmcmanus1 wmoore   0 Nov 16 18:35 473805[5].service0.ER
+-rw------- 1 rmcmanus1 wmoore   0 Nov 16 18:35 473805[6].service0.ER
+-rw------- 1 rmcmanus1 wmoore   0 Nov 16 18:35 473805[7].service0.ER
+-rw------- 1 rmcmanus1 wmoore 122 Nov 16 20:24 473806[1].service0.ER
+-rw------- 1 rmcmanus1 wmoore 122 Nov 16 20:26 473806[2].service0.ER
+-rw------- 1 rmcmanus1 wmoore 122 Nov 16 20:26 473806[3].service0.ER
+-rw------- 1 rmcmanus1 wmoore 122 Nov 16 20:26 473806[4].service0.ER
+-rw------- 1 rmcmanus1 wmoore 122 Nov 16 20:26 473806[5].service0.ER
+-rw------- 1 rmcmanus1 wmoore 122 Nov 16 20:26 473806[6].service0.ER
+-rw------- 1 rmcmanus1 wmoore 122 Nov 16 20:26 473806[7].service0.ER
+-rw------- 1 rmcmanus1 wmoore   0 Nov 16 18:35 473807[1].service0.ER
+-rw------- 1 rmcmanus1 wmoore   0 Nov 16 18:35 473807[2].service0.ER
+-rw------- 1 rmcmanus1 wmoore   0 Nov 16 18:35 473807[3].service0.ER
+-rw------- 1 rmcmanus1 wmoore   0 Nov 16 18:35 473807[4].service0.ER
+-rw------- 1 rmcmanus1 wmoore   0 Nov 16 14:16 473807[5].service0.ER
+-rw------- 1 rmcmanus1 wmoore 122 Nov 16 20:22 473808[1].service0.ER
+-rw------- 1 rmcmanus1 wmoore 122 Nov 16 20:22 473808[2].service0.ER
+-rw------- 1 rmcmanus1 wmoore 122 Nov 16 20:22 473808[3].service0.ER
+-rw------- 1 rmcmanus1 wmoore 122 Nov 16 20:22 473808[4].service0.ER
+-rw------- 1 rmcmanus1 wmoore 122 Nov 16 20:22 473808[5].service0.ER
+[rmcmanus1@service1 std-err]$ vi 473808\[5\].service0.ER 
+[rmcmanus1@service1 std-err]$ cd ..
+[rmcmanus1@service1 hpc-blast]$ ls
+blastdb  blast-pipeline.sh  blast-results  config.sh  data  scripts  std-err  std-out
+[rmcmanus1@service1 hpc-blast]$ 
+[rmcmanus1@service1 hpc-blast]$ ls ./blastdb/
+CAM_PROJ_MarineMicrobes.pep.fa      CAM_PROJ_MarineMicrobes.pep.fa.pin
+CAM_PROJ_MarineMicrobes.pep.fa.phr  CAM_PROJ_MarineMicrobes.pep.fa.psq
+[rmcmanus1@service1 hpc-blast]$ ls ./blast-results/
+SRR006596_day.fasta.1.blastout         SRR006596_day.fasta.7.blastout
+SRR006596_day.fasta.1.blastout.parsed  SRR006596_day.fasta.7.blastout.parsed
+SRR006596_day.fasta.2.blastout         SRR006597_night.fasta.1.blastout
+SRR006596_day.fasta.2.blastout.parsed  SRR006597_night.fasta.1.blastout.parsed
+SRR006596_day.fasta.3.blastout         SRR006597_night.fasta.2.blastout
+SRR006596_day.fasta.3.blastout.parsed  SRR006597_night.fasta.2.blastout.parsed
+SRR006596_day.fasta.4.blastout         SRR006597_night.fasta.3.blastout
+SRR006596_day.fasta.4.blastout.parsed  SRR006597_night.fasta.3.blastout.parsed
+SRR006596_day.fasta.5.blastout         SRR006597_night.fasta.4.blastout
+SRR006596_day.fasta.5.blastout.parsed  SRR006597_night.fasta.4.blastout.parsed
+SRR006596_day.fasta.6.blastout         SRR006597_night.fasta.5.blastout
+SRR006596_day.fasta.6.blastout.parsed  SRR006597_night.fasta.5.blastout.parsed
+[rmcmanus1@service1 hpc-blast]$ ls ./data/
+faSplit  files-list  SRR006596_day.fasta  SRR006597_night.fasta
+[rmcmanus1@service1 hpc-blast]$ ls ./scripts/
+01-bio-searchio.pl  01-fasta-splitter.pl  run-blast.sh  run-fasta-splitter.sh  run-parse-blast.sh
+[rmcmanus1@service1 hpc-blast]$ 
