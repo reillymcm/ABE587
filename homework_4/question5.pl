@@ -1,10 +1,11 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 #File: question5.pl
+
 use strict;
 use warnings;
 
 my $inputfile = 'Perl_III.nobody.txt';
- open (IN, '<', $inputfile)
+open (IN, '<', $inputfile)
 	or die "could not open $inputfile: $!\n";
 
 while (my $line = <IN>) {
@@ -19,6 +20,4 @@ while (my $line = <IN>) {
     if ($somebody >= 0) {
     warn("Somebody is here: $somebody.\n");
     }
-    
 }
-
